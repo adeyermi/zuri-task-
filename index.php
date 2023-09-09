@@ -22,9 +22,9 @@ $github_file_URL = 'https://github.com/adeyermi/zuri-task-/blob/main/index.php';
 $github_repo_URL = 'https://github.com/adeyermi/zuri-task-';
 
 $response = [
-    'slack_name' => 'Adeyermi', 
-    'day_of_week' => $currentDayOfWeek,
-    'current_utc_time' => $currentTimeUTC->format('Y-m-d \TH:i:s\Z'),
+    'slack_name' => 'adeyermi', 
+    'current_day' => $currentDayOfWeek,
+    'utc_time' => $currentTimeUTC->format('Y-m-d \TH:i:s\Z'),
     'track' => 'Backend',
     'github_file_url' => "https://github.com/adeyermi/zuri-task-/blob/main/index.php",
     'github_repo_url' => 'https://github.com/adeyermi/zuri-task-',
