@@ -2,7 +2,7 @@
 $slackName = isset($_GET['slack_name']) ? $_GET['slack_name'] : '';
 $track = isset($_GET['track']) ? $_GET['track'] : '';
 
-if ($track !== 'Backend Developer') {
+if ($track !== 'Backend') {
     http_response_code(200);
     echo json_encode(['error' => 'Invalid track']);
     exit;
@@ -25,7 +25,7 @@ $response = [
     'slack_name' => 'Adeyermi',
     'day_of_week' => $currentDayOfWeek,
     'current_utc_time' => $currentTimeUTC->format('Y-m-d H:i:s'),
-    'track' => 'Backend Developer',
+    'track' => 'Backend',
     'github_File_url' => $github_File_URL,
     'github_repo_url' => $github_repo_URL,
     'status_code' => 200,
