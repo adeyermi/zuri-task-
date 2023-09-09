@@ -16,18 +16,18 @@ $currentTimeUTC = new DateTime($currentTime, new DateTimeZone('UTC'));
 $currentTimeUTC->modify('-2 hours'); // Adjust for +/-2 UTC
 
 // GitHub File
-$github_File_URL = 'https://github.com/yourusername/yourrepository/blob/main/endpoint.php';
+$github_file_URL = 'https://github.com/adeyermi/zuri-task-/blob/main/index.php';
 
 // GitHub repo
-$github_repo_URL = 'https://github.com/yourusername/yourrepository';
+$github_repo_URL = 'https://github.com/adeyermi/zuri-task-';
 
 $response = [
-    'slack_name' => 'Adeyermi',
+    'slack_name' => 'Adeyermi', 
     'day_of_week' => $currentDayOfWeek,
-    'current_utc_time' => $currentTimeUTC->format('Y-m-d H:i:s'),
+    'current_utc_time' => $currentTimeUTC->format('Y-m-d \TH:i:s\Z'),
     'track' => 'Backend',
-    'github_File_url' => $github_File_URL,
-    'github_repo_url' => $github_repo_URL,
+    'github_file_url' => "https://github.com/adeyermi/zuri-task-/blob/main/index.php",
+    'github_repo_url' => 'https://github.com/adeyermi/zuri-task-',
     'status_code' => 200,
 ];
 
